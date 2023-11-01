@@ -21,8 +21,6 @@ const mergeSort = arr => {
     if (arr.length <= 1) {
         return arr
     }
-    console.log(arr)
-    console.log(typeof arr)
 
     const middleIndex = Math.floor(arr.length / 2)
     const leftArr = arr.slice(0, middleIndex)
@@ -31,7 +29,6 @@ const mergeSort = arr => {
     return merge(mergeSort(leftArr), mergeSort(rightArr))
 }
 
-
-let testArr = [101, 24, 1, 9, 3, 5, 2, 28, 132, 3, 3, 48,]
+const testArr = [101, 24, 1, 9, 3, 5, 2, 28, 132, 3, 3, 48,]
 
 console.log(mergeSort(testArr))
