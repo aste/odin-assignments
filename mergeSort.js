@@ -29,6 +29,6 @@ const mergeSort = arr => {
     return merge(mergeSort(leftArr), mergeSort(rightArr))
 }
 
-const testArr = [101, 24, 1, 9, 3, 5, 2, 28, 132, 3, 3, 48,]
+const testArr = [101, 24, 1, 9, 3, 5, 2, 28, 132, 3, 3, 48]
 
 console.log(mergeSort(testArr))
